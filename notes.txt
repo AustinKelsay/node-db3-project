@@ -1,0 +1,16 @@
+TK notes:
+----------
+
+Foreign keys:
+ - So we have already explored the idea of a "primary key"
+ - Each table will have its own primary key
+ - Foreign keys are just primary keys from other tables brought into your current table as a refference 
+
+
+Join statements:
+ - A join statement is a method for querying data from two or more tables
+ - We use it to connect tables on a common field (such as a foreign and primary key)
+
+ SELECT OrderID, CustomerName, OrderDate from Orders
+ JOIN Customers
+ ON Orders.CustomerId = Customers.CustomerId;
